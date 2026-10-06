@@ -1,0 +1,56 @@
+{
+  "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
+  "aggiornato": "2026-10-06T21:00:00+00:00",
+  "post": [
+    {
+      "id": "W40-2026",
+      "titolo": "Bandi a sportello: la scadenza scritta non è quella vera",
+      "estratto": "Una misura a sportello chiude quando finiscono i soldi, non alla data sul bando. Il precedente lombardo chiuso un mese prima e il bando Piemonte FER ancora aperto.",
+      "data": "2026-10-01",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7511319235663478784/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7510647078973288449/",
+      "reazioni": 3,
+      "impression": null
+    },
+    {
+      "id": "W39-2026",
+      "titolo": "«Quanto costa una diagnosi?» È la domanda sbagliata",
+      "estratto": "Il prezzo non dipende dalla dimensione del sito ma da quante cose deve reggere il documento: iperammortamento, Conto Termico, obbligo EED, bandi.",
+      "data": "2026-09-24",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7508782567257731072/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7508110408633712643/",
+      "reazioni": 3,
+      "impression": null
+    },
+    {
+      "id": "W38-2026",
+      "titolo": "Piano EED3: cosa ti manca se domani arriva un controllo",
+      "estratto": "«Siamo obbligati?» è la domanda facile. Quella che costa è un'altra: cosa serve per non restituire gli sconti già presi in bolletta. Il piano in cinque passi.",
+      "data": "2026-09-17",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7506250261930184706/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7505591329083703296/",
+      "reazioni": 3,
+      "impression": null
+    },
+    {
+      "id": "W37-2026",
+      "titolo": "CBAM: la soglia delle 50 tonnellate e chi importa in deroga",
+      "estratto": "Chi ha fatto domanda entro il 31 marzo importa in deroga in attesa di risposta. Sembra una posizione comoda, e non lo è.",
+      "data": "2026-09-10",
+      "url": null,
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7503036976099442688/",
+      "reazioni": null,
+      "impression": null
+    },
+    {
+      "id": "W35-2026",
+      "titolo": "Diagnosi energetica: chi è dentro e chi è fuori dall'obbligo",
+      "estratto": "Perché ragioniamo ancora sull'articolo 8 e non sulle soglie in TJ che si leggono ovunque: la risposta del quesito a ENEA.",
+      "data": "2026-08-27",
+      "url": null,
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7498010324600754176/",
+      "reazioni": null,
+      "impression": null
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+name: Aggiorna sito
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 04:00 ora legale italiana (03:00 d'inverno): GitHub usa solo UTC
+  workflow_dispatch:       # "Run workflow" a mano, anche dal telefono
+  push:
+    branches: [main]
+    paths:                 # es. il post LinkedIn del giovedì o una modifica al design
+      - "data/linkedin.json"
+      - "config/**"
+      - "src/**"
+      - "build.py"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sito
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Leggi YouTube e Substack (solo dati pubblici, nessuna credenziale)
+        run: |
+          python fetch/youtube.py
+          python fetch/substack.py
+
+      - name: Genera il sito
+        run: python build.py
+
+      - name: Salva la cache dei dati
+        run: |
+          git config user.name "gualco-it bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "Aggiornamento automatico $(date -u +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4

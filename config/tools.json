@@ -1,0 +1,39 @@
+[
+  {
+    "id": "fv",
+    "nome": "Quanto fotovoltaico mi serve",
+    "desc": "Parti dai consumi della bolletta e scopri quanti kWp ti servono davvero, con autoconsumo e risparmio stimati.",
+    "url": "https://giagualco.github.io/quanto-fotovoltaico-mi-serve/",
+    "temi": [
+      "casa"
+    ]
+  },
+  {
+    "id": "colonnine",
+    "nome": "Bonus colonnine: il mio caso rientra?",
+    "desc": "Controlla i requisiti del decreto, cerca la tua wallbox nell'elenco GSE, fai il conto e stampa la checklist dei documenti. Senza mail e senza tracciamento.",
+    "url": "https://giagualco.github.io/bonus-colonnine-check/",
+    "temi": [
+      "mobilita",
+      "casa"
+    ]
+  },
+  {
+    "id": "enea",
+    "nome": "Nuovi limiti ENEA",
+    "desc": "Inserisci consumi o costi annuali del sito produttivo e verifica quali obblighi scattano con i nuovi limiti energetici.",
+    "url": "https://nuovi-limiti-enea.netlify.app",
+    "temi": [
+      "abc"
+    ]
+  },
+  {
+    "id": "assessment",
+    "nome": "Assessment energetico",
+    "desc": "Otto sezioni per mettere in ordine obblighi, consumi e investimenti prima dell'incontro tecnico. Codice di accesso su richiesta.",
+    "url": "https://assessment.energetico.workers.dev",
+    "temi": [
+      "abc"
+    ]
+  }
+]

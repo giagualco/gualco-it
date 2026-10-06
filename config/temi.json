@@ -1,0 +1,29 @@
+{
+  "_nota": "Temi = playlist tematiche del canale YouTube. I video sono assegnati per appartenenza alla playlist; articoli, post e tool per parole chiave (minuscole, match su titolo+sottotitolo/estratto). 'override' forza i temi per id.",
+  "temi": [
+    { "slug": "casa", "nome": "Casa e condominio", "playlist": "PLhhCZk5F2ZT0qv82qINtR0XBGzMPWCcfU",
+      "kw": ["casa", "condomin", "caldaia", "pompa di calore", "pompe di calore", "cappotto", "ape ", "classe energetica", "scaldabagno", "scaldacqua", "climatizz", "condizionator", "infissi", "isolamento", "fotovoltaico", "accumulo domestic", "detrazion", "ecobonus", "superbonus"] },
+    { "slug": "conto-termico", "nome": "Conto Termico 3.0", "playlist": "PLhhCZk5F2ZT39PWksf9BsOfsRSFWn_q9k",
+      "kw": ["conto termico", "ct 3.0", "ct3"] },
+    { "slug": "mobilita", "nome": "Mobilità elettrica", "playlist": "PLhhCZk5F2ZT0o9BUuUy2B6ANz6pnFqK2i",
+      "kw": ["auto elettric", "colonnin", "ricarica", "mobilità", "veicol"] },
+    { "slug": "cer", "nome": "Comunità energetiche", "playlist": "PLMIYtPn9PtmI",
+      "kw": ["comunità energetic", "cer ", "cacer", "autoconsumo collettivo", "autoconsumo diffuso"] },
+    { "slug": "clima", "nome": "Clima in numeri", "playlist": "PLhhCZk5F2ZT3eyRcrv4fg7VcRJc7yxa6P",
+      "kw": ["clima", "ondat", "caldo", "uragan", "ipcc", "co2", "emission", "ets", "cbam", "tassa climatica", "global cooling", "riscaldamento globale"] },
+    { "slug": "verita-scomode", "nome": "Verità scomode", "playlist": "PLhhCZk5F2ZT2oQWt9Uhje12nxWPsy1ptk",
+      "kw": ["bufal", "gonfiat", "mito", "dichiarat", "numero gonfiato", "paradosso"] },
+    { "slug": "abc", "nome": "ABC energia", "playlist": "PLhhCZk5F2ZT3SpirraU266AYfC-wLa0JC",
+      "kw": ["come funziona", "cos'è", "spiegat", "diagnosi energetica", "efficienza energetica", "iso 50001", "eed", "audit", "bolletta", "bollette", "pun", "prezzo marginale"] },
+    { "slug": "enerpalle", "nome": "Enerpalle", "playlist": "PLhhCZk5F2ZT1-85bJwhl-rjt75JLrPuSQ", "kw": [] }
+  ],
+  "rubriche": [
+    { "slug": "gufo-reale", "nome": "Gufo Reale", "colore": "gufo", "playlist": "PLNOpx5tNn_yE",
+      "kw": ["gufo reale", "il gufo", "🗣️"] },
+    { "slug": "controcorrente", "nome": "Controcorrente", "colore": "cc", "playlist": "PLhhCZk5F2ZT13Eb9LZ2mJarteegLD-C2J",
+      "kw": ["controcorrente", "🔎 la verità"] },
+    { "slug": "orso", "nome": "Bruno l'Orso", "colore": "orso", "playlist": "PLDxyzN3Rcm44",
+      "kw": ["bruno l'orso"] }
+  ],
+  "override": {}
+}

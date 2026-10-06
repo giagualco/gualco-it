@@ -1,0 +1,29 @@
+{
+  "dominio": "gualco.it",
+  "url": "https://gualco.it",
+  "nome": "Gianluca Gualco",
+  "firma": "GIANLUCA GUALCO ENERGIA",
+  "occhiello": "ENERGIA · BOLLETTE · EFFICIENZA",
+  "titolo_pagina": "Gianluca Gualco — Energia, bollette, efficienza",
+  "descrizione": "Tutta la divulgazione di Gianluca Gualco, energy manager, in un posto solo: video YouTube, articoli Substack, tool gratuiti e post LinkedIn su energia, bollette e incentivi.",
+  "bio": "Sono energy manager e guido 3i Efficientamento Energetico. Qui raccolgo quello che pubblico: i video del canale, gli articoli su Substack, i post su LinkedIn e i tool gratuiti che costruiamo per fare i conti prima di decidere.",
+  "youtube": {
+    "channelId": "UCpCF0aUZs2ZkH-r3t2UuzNQ",
+    "handle": "@gianlucagualcoenergia",
+    "url": "https://www.youtube.com/@gianlucagualcoenergia",
+    "iscriviti": "https://www.youtube.com/@gianlucagualcoenergia?sub_confirmation=1"
+  },
+  "linkedin": {
+    "profilo": "https://www.linkedin.com/in/gianluca-gualco-033474100",
+    "pagina_3i": "https://www.linkedin.com/company/5116376/"
+  },
+  "substack": {
+    "url": "https://gualco.substack.com",
+    "iscriviti": "https://gualco.substack.com/subscribe"
+  },
+  "azienda": {
+    "nome": "3i Efficientamento Energetico SB Srl",
+    "url": null
+  },
+  "cname_attivo": false
+}
