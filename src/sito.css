@@ -64,7 +64,18 @@ h3{font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.25}
 .hero .intro{margin:16px 0 0;max-width:58ch;font-size:clamp(16px,1.5vw,19px);line-height:1.55;color:var(--corpo)}
 .hero .riga{display:flex;align-items:center;gap:14px;margin:18px 0 0;color:var(--gg)!important;font-size:clamp(16px,1.6vw,19px);font-weight:500;color:var(--corpo)}
 .hero .riga::before{content:"";width:48px;height:5px;background:var(--gg);flex:0 0 auto}
-.ritratto{width:190px;height:auto;flex:0 0 auto;margin-bottom:-1px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.ultima{position:relative;display:flex;flex-direction:column;gap:10px;width:360px;flex:0 0 auto;margin-bottom:26px;padding:16px;border-radius:var(--r);background:var(--ardesia);border:1px solid var(--linea);transition:border-color .15s,transform .15s}
+.ultima:hover{border-color:var(--gg);transform:translateY(-2px)}
+.ul-k{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gg)}
+.ul-k i{width:8px;height:8px;border-radius:50%;background:var(--gg);box-shadow:0 0 0 0 rgba(255,225,77,.6);animation:pulsa 2s infinite}
+@keyframes pulsa{70%{box-shadow:0 0 0 8px rgba(255,225,77,0)}100%{box-shadow:0 0 0 0 rgba(255,225,77,0)}}
+.ul-img{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--ardesia-2)}
+.ul-img img{width:100%;height:100%;object-fit:cover}
+.ul-img .play{position:absolute;left:50%;top:50%;width:56px;height:40px;margin:-20px 0 0 -28px;border-radius:12px;background:rgba(8,10,15,.82);display:grid;place-items:center}
+.ul-img .play::after{content:"";border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent var(--gg);margin-left:4px}
+.ul-m{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;font-weight:500;color:var(--muto)}
+.ultima b{font-size:16px;font-weight:600;letter-spacing:-.015em;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ultima p{margin:0;font-size:14px;line-height:1.5;color:var(--corpo)}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .tile{position:relative;display:flex;flex-direction:column;gap:14px;min-height:150px;padding:20px 20px 18px;border-radius:var(--r);background:var(--ardesia);border:1px solid var(--linea);border-top:4px solid var(--gg);transition:transform .15s,border-color .15s,background .15s}
 .tile:hover{transform:translateY(-3px);background:#182034;border-color:var(--linea-2);border-top-color:var(--gg)}
@@ -219,7 +230,12 @@ footer a:hover{color:var(--gg)}
   .tiles{grid-template-columns:repeat(2,1fr)}
   .riga6{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(200px,230px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--linea-2) transparent}
   .riga6 .card{scroll-snap-align:start}
-  .ritratto{width:150px}
+  .hero-top{flex-direction:column;align-items:stretch;gap:0}
+  .ultima{width:auto;flex-direction:row;flex-wrap:wrap;align-items:center;column-gap:14px}
+  .ultima .ul-k{flex-basis:100%}
+  .ultima .ul-img{width:150px;flex:0 0 auto}
+  .ultima .ul-m{display:none}
+  .ultima b{flex:1;min-width:0;-webkit-line-clamp:3}
   .ultimo,.art{grid-template-columns:1fr}
 }
 @media (max-width:640px){
@@ -228,7 +244,8 @@ footer a:hover{color:var(--gg)}
   .firma .t{display:none}
   .hero .wrap{padding-top:22px;padding-bottom:22px}
   .hero-txt{padding-bottom:16px}
-  .ritratto{width:104px}
+  .ultima .ul-img{width:110px}
+  .ultima b{font-size:14px}
   .tiles{gap:10px}
   .tile{min-height:0;padding:14px 14px 12px;gap:10px}
   .tile .ic{width:36px;height:36px}
@@ -243,4 +260,4 @@ footer a:hover{color:var(--gg)}
   .fascia{padding:22px 18px;border-left-width:8px}
   .griglia{grid-template-columns:1fr}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

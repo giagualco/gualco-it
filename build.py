@@ -218,6 +218,25 @@ def btn_li(testo="Seguimi su LinkedIn"):
 
 
 # ---------------- sezioni ----------------
+def ultima_pubblicazione():
+    candidati = [x for x in LONG + SHORT + ART + LIN if x.get("data")]
+    if not candidati:
+        return ""
+    x = max(candidati, key=lambda v: v["data"][:19])
+    f = x["fonte"]
+    etichetta_f = {"youtube": "Short su YouTube" if x.get("short") else "Video su YouTube",
+                   "substack": "Articolo su Substack", "linkedin": "Post su LinkedIn"}[f]
+    img = x.get("img") if f in ("youtube", "substack") else None
+    if f == "youtube":
+        img = f"https://i.ytimg.com/vi/{x['id']}/{'hqdefault' if x.get('short') else 'sddefault'}.jpg"
+    vis = img and f'<div class="ul-img"><img src="{e(img)}" alt="" fetchpriority="high">{"<span class=play></span>" if f == "youtube" else ""}</div>'
+    testo = "" if vis else f'<p>{e(primo_paragrafo(x.get("desc", ""), 170))}</p>'
+    return (f'<a class="ultima" href="{e(x["url"])}" target="_blank" rel="noopener">'
+            f'<span class="ul-k"><i></i>Ultima pubblicazione</span>{vis or ""}'
+            f'<span class="ul-m">{fonte(f)}<span>{data_it(x["data"])}</span></span>'
+            f'<b>{e(x["titolo"])}</b>{testo}</a>')
+
+
 def sez_hero():
     can = YT.get("canale", {})
     iscritti = compatto(can["iscritti"]) if can.get("iscritti") else (can.get("iscritti_testo") or "").replace(" iscritti", "")
@@ -241,7 +260,7 @@ def sez_hero():
     <p class="intro">Spiego l'energia in quattro posti diversi: i post su LinkedIn, i video su YouTube, gli articoli su Substack e i calcolatori gratuiti. Qui li trovi tutti insieme, aggiornati ogni giorno.</p>
     <p class="riga">Scegli da dove partire</p>
   </div>
-  <img class="ritratto" src="assets/ritratto.png" width="720" height="756" alt="Gianluca Gualco" fetchpriority="high">
+  {ultima_pubblicazione()}
 </div>
 <nav class="tiles" aria-label="Vai ai contenuti">{t}</nav>
 </div></header>'''
