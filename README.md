@@ -27,7 +27,7 @@ python3 -m http.server 4173 --directory docs            # anteprima su http://lo
 ## Fonti
 
 - **YouTube.** Con credenziali in `.env` o nei GitHub Secrets (`YOUTUBE_API_KEY`, oppure `YT_CLIENT_ID` + `YT_CLIENT_SECRET` + `YT_REFRESH_TOKEN`) legge tutto il canale con le visualizzazioni. Senza credenziali usa il modo pubblico: feed RSS (ultimi 15 video, con views), pagine delle playlist e pagina canale. L'archivio si accumula giorno dopo giorno.
-- **Substack.** Archivio pubblico `gualco.substack.com/api/v1/archive`: `sort=new` per gli ultimi, `sort=top` per i più apprezzati.
+- **Substack.** Archivio pubblico `gualco.substack.com/api/v1/archive` (`sort=new` / `sort=top`). Dai server di GitHub Cloudflare risponde 403 a tutto, quindi di notte si scende a cascata: API → feed `/feed` → `api.rss2json.com` (servizio pubblico, nessuna chiave). La classifica «più apprezzati» si aggiorna solo quando l'API risponde, cioè lanciando `python3 fetch/substack.py` dal Mac e facendo push.
 - **LinkedIn.** `data/linkedin.json`. Il giovedì, dopo il rilancio personale:
   ```bash
   python3 strumenti/aggiorna_linkedin.py post --id W41-2026 --data 2026-10-08 \
@@ -36,7 +36,11 @@ python3 -m http.server 4173 --directory docs            # anteprima su http://lo
   ```
 - **Temi.** Sono le playlist tematiche del canale. I video vengono assegnati per appartenenza alla playlist; articoli, post e tool per parole chiave (`config/temi.json`). Per correggere un caso singolo: `"override": {"<id>": ["casa"]}`.
 
-## Pubblicazione (fase B, da fare)
+## Pubblicazione
+
+Online dal 06/10/2026 su https://giagualco.github.io/gualco-it/ (Pages da GitHub Actions). Push dal Mac con `gh` già autenticato. Restano da fare i passi 4–5 (dominio).
+
+### Passi
 
 1. Repo `giagualco/gualco-it`, push, Settings → Pages → Source: **GitHub Actions**.
 2. Nessun Secret: per scelta il sito usa solo dati pubblici (deciso il 06/10/2026). Il supporto alle credenziali resta nel codice ma è spento.
