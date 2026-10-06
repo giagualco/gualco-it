@@ -1,6 +1,6 @@
 {
   "dominio": "gualco.it",
-  "url": "https://gualco.it",
+  "url": "https://giagualco.github.io/gualco-it",
   "nome": "Gianluca Gualco",
   "firma": "GIANLUCA GUALCO ENERGIA",
   "occhiello": "ENERGIA · BOLLETTE · EFFICIENZA",
@@ -25,5 +25,6 @@
     "nome": "3i Efficientamento Energetico SB Srl",
     "url": null
   },
-  "cname_attivo": false
+  "cname_attivo": false,
+  "_nota_url": "Con il redirect Aruba (che non conserva il percorso) canonical/og/sitemap devono puntare a github.io. Se un giorno si passa ai record DNS: url = https://gualco.it e cname_attivo = true."
 }

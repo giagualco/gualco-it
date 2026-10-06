@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://gualco.it/sitemap.xml
+Sitemap: https://giagualco.github.io/gualco-it/sitemap.xml
