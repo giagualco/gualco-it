@@ -34,8 +34,13 @@ def voce(x):
 
 def da_rss():
     """Ripiego: Substack blocca spesso l'API dai server cloud (403). Il feed dà gli ultimi ~20 articoli."""
-    x = scarica(f"{BASE}/feed", header={"Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8"})
     cache = {p["url"]: p for p in (leggi("data/substack.json") or {}).get("post", [])}
+    try:
+        x = scarica(f"{BASE}/feed", header={"Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8"}, tentativi=2)
+    except Exception as e:
+        # Cloudflare blocca anche il feed dagli IP dei data center: passo da rss2json.com (servizio pubblico, senza chiave)
+        log("substack", f"feed diretto non disponibile ({e}), uso rss2json")
+        return da_rss2json(cache)
     nuovi = []
     for it in x.split("<item>")[1:]:
         g = lambda tag: (re.search(rf"<{tag}>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{tag}>", it, re.S) or [None, ""])[1]  # noqa: E731
@@ -47,6 +52,25 @@ def da_rss():
                       "sottotitolo": unescape(re.sub("<[^>]+>", "", g("description"))).strip() or vecchio.get("sottotitolo", ""),
                       "url": url, "data": parsedate_to_datetime(g("pubDate")).isoformat(),
                       "cover": vecchio.get("cover") or (cover[1] if cover else None)})
+    visti = {p["url"] for p in nuovi}
+    return nuovi + [p for p in cache.values() if p["url"] not in visti]
+
+
+def da_rss2json(cache):
+    from urllib.parse import quote
+    from datetime import datetime, timezone
+    r = scarica(f"https://api.rss2json.com/v1/api.json?rss_url={quote(BASE + '/feed', safe='')}", json_=True)
+    if r.get("status") != "ok":
+        raise RuntimeError(f"rss2json: {r.get('message', r.get('status'))}")
+    nuovi = []
+    for it in r.get("items", []):
+        url = it["link"].split("?")[0]
+        vecchio = cache.get(url, {})
+        data = datetime.strptime(it["pubDate"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc).isoformat()
+        cover = (it.get("enclosure") or {}).get("link") or it.get("thumbnail") or None
+        nuovi.append({**vecchio, "id": vecchio.get("id", url), "titolo": unescape(it["title"]).strip(),
+                      "sottotitolo": vecchio.get("sottotitolo") or unescape(re.sub("<[^>]+>", "", it.get("description", ""))).strip()[:300],
+                      "url": url, "data": data, "cover": vecchio.get("cover") or cover})
     visti = {p["url"] for p in nuovi}
     return nuovi + [p for p in cache.values() if p["url"] not in visti]
 
