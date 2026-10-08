@@ -1,7 +1,17 @@
 {
   "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
-  "aggiornato": "2026-10-06T21:00:00+00:00",
+  "aggiornato": "2026-10-08T08:45:35+00:00",
   "post": [
+    {
+      "id": "W41-2026",
+      "titolo": "Presidio 4.0 e 5.0: chi controlla l'impianto dopo la perizia",
+      "estratto": "Il credito si ottiene con una perizia, ma gli impianti cambiano: software, linee spostate, beni ceduti. Meglio un controllo periodico che un contraddittorio.",
+      "data": "2026-10-08",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7513856777378148352/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7513185200084770816/",
+      "reazioni": 0,
+      "impression": null
+    },
     {
       "id": "W40-2026",
       "titolo": "Bandi a sportello: la scadenza scritta non è quella vera",
