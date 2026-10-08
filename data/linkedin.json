@@ -1,6 +1,6 @@
 {
   "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
-  "aggiornato": "2026-10-08T08:45:35+00:00",
+  "aggiornato": "2026-10-08T08:48:40+00:00",
   "post": [
     {
       "id": "W41-2026",
@@ -10,7 +10,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7513856777378148352/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7513185200084770816/",
       "reazioni": 0,
-      "impression": null
+      "impression": 29
     },
     {
       "id": "W40-2026",
@@ -20,7 +20,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7511319235663478784/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7510647078973288449/",
       "reazioni": 3,
-      "impression": null
+      "impression": 173
     },
     {
       "id": "W39-2026",
@@ -30,7 +30,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7508782567257731072/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7508110408633712643/",
       "reazioni": 3,
-      "impression": null
+      "impression": 153
     },
     {
       "id": "W38-2026",
@@ -40,27 +40,27 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7506250261930184706/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7505591329083703296/",
       "reazioni": 3,
-      "impression": null
+      "impression": 218
     },
     {
       "id": "W37-2026",
       "titolo": "CBAM: la soglia delle 50 tonnellate e chi importa in deroga",
       "estratto": "Chi ha fatto domanda entro il 31 marzo importa in deroga in attesa di risposta. Sembra una posizione comoda, e non lo è.",
       "data": "2026-09-10",
-      "url": null,
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7503708958436818944/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7503036976099442688/",
-      "reazioni": null,
-      "impression": null
+      "reazioni": 7,
+      "impression": 184
     },
     {
       "id": "W35-2026",
       "titolo": "Diagnosi energetica: chi è dentro e chi è fuori dall'obbligo",
       "estratto": "Perché ragioniamo ancora sull'articolo 8 e non sulle soglie in TJ che si leggono ovunque: la risposta del quesito a ENEA.",
       "data": "2026-08-27",
-      "url": null,
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7498635921613901824/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7498010324600754176/",
-      "reazioni": null,
-      "impression": null
+      "reazioni": 11,
+      "impression": 422
     }
   ]
 }
