@@ -9,6 +9,15 @@
     ]
   },
   {
+    "id": "auto",
+    "nome": "Elettrica o termica? Il conto vero",
+    "desc": "Confronta due auto su tutti gli anni in cui le tieni: acquisto, carburante o ricarica, bollo, manutenzione e rivendita. Ti dice quale costa meno e oltre quanti km all'anno conviene l'elettrica.",
+    "url": "https://giagualco.github.io/elettrica-o-termica/",
+    "temi": [
+      "mobilita"
+    ]
+  },
+  {
     "id": "colonnine",
     "nome": "Bonus colonnine: il mio caso rientra?",
     "desc": "Controlla i requisiti del decreto, cerca la tua wallbox nell'elenco GSE, fai il conto e stampa la checklist dei documenti. Senza mail e senza tracciamento.",
