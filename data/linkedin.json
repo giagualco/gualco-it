@@ -1,6 +1,6 @@
 {
   "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
-  "aggiornato": "2026-10-22T08:40:13+00:00",
+  "aggiornato": "2026-11-13T09:36:32+00:00",
   "post": [
     {
       "id": "W43-2026",
@@ -9,8 +9,8 @@
       "data": "2026-10-22",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7518930685835829249/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7518257750355714048/",
-      "reazioni": 2,
-      "impression": 39
+      "reazioni": 7,
+      "impression": 219
     },
     {
       "id": "W42-2026",
@@ -20,7 +20,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516394846383759360/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7515460823998197760/",
       "reazioni": 4,
-      "impression": 197
+      "impression": 273
     },
     {
       "id": "W41-2026",
@@ -30,7 +30,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7513856777378148352/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7513185200084770816/",
       "reazioni": 1,
-      "impression": 131
+      "impression": 146
     },
     {
       "id": "W40-2026",
@@ -39,8 +39,8 @@
       "data": "2026-10-01",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7511319235663478784/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7510647078973288449/",
-      "reazioni": 3,
-      "impression": 214
+      "reazioni": 4,
+      "impression": 219
     },
     {
       "id": "W39-2026",
@@ -50,7 +50,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7508782567257731072/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7508110408633712643/",
       "reazioni": 3,
-      "impression": 177
+      "impression": 178
     },
     {
       "id": "W38-2026",
@@ -60,7 +60,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7506250261930184706/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7505591329083703296/",
       "reazioni": 3,
-      "impression": 226
+      "impression": 227
     },
     {
       "id": "W37-2026",
@@ -80,7 +80,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7498635921613901824/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7498010324600754176/",
       "reazioni": 11,
-      "impression": 421
+      "impression": 422
     }
   ]
 }
