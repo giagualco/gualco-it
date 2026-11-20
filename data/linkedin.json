@@ -1,7 +1,17 @@
 {
   "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
-  "aggiornato": "2026-11-13T09:36:32+00:00",
+  "aggiornato": "2026-11-20T09:40:08+00:00",
   "post": [
+    {
+      "id": "W47-2026",
+      "titolo": "Condizionalità green: conta la via che si riesce a documentare",
+      "estratto": "Le tre vie per gli elettrivori sono una scelta d'investimento. La più economica sulla carta rischia di essere quella che a un controllo non si riesce a provare.",
+      "data": "2026-11-20",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7529454898250305537/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7528399231909548034/",
+      "reazioni": 1,
+      "impression": 13
+    },
     {
       "id": "W43-2026",
       "titolo": "Assessment energetico: gli obblighi annuali non aspettano il decreto",
@@ -10,7 +20,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7518930685835829249/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7518257750355714048/",
       "reazioni": 7,
-      "impression": 219
+      "impression": 222
     },
     {
       "id": "W42-2026",
@@ -80,7 +90,7 @@
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7498635921613901824/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7498010324600754176/",
       "reazioni": 11,
-      "impression": 422
+      "impression": 424
     }
   ]
 }
