@@ -1,7 +1,17 @@
 {
   "_nota": "Fonte di verità dei post LinkedIn sul sito. Ogni giovedì il passo 'aggiorna-sito-linkedin' della pubblicazione personale aggiunge il post (url = rilancio personale) e aggiorna reazioni/impression. url_3i = post del martedì su 3i group. Se url è null il sito linka url_3i.",
-  "aggiornato": "2026-11-20T09:40:08+00:00",
+  "aggiornato": "2026-11-26T09:40:06+00:00",
   "post": [
+    {
+      "id": "W48-2026",
+      "titolo": "SIMEST e diagnosi energetica: prima si guarda il de minimis che resta",
+      "estratto": "Un ente che finanzia l'export accetta la diagnosi come prova di serietà sull'energia. Prima di decidere se conviene, però, contano il plafond residuo e il calendario.",
+      "data": "2026-11-26",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7531628759448199168/",
+      "url_3i": "https://www.linkedin.com/feed/update/urn:li:activity:7530955948597714944/",
+      "reazioni": 0,
+      "impression": 15
+    },
     {
       "id": "W47-2026",
       "titolo": "Condizionalità green: conta la via che si riesce a documentare",
@@ -9,8 +19,8 @@
       "data": "2026-11-20",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7529454898250305537/",
       "url_3i": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7528399231909548034/",
-      "reazioni": 1,
-      "impression": 13
+      "reazioni": 5,
+      "impression": 102
     },
     {
       "id": "W43-2026",
